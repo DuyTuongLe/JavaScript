@@ -26,3 +26,8 @@ git add .
 git commit -m "comment"
 git push -u origin [tên nhánh]
 
+Gộp dev vào master
+Phải qua master trước
+git checkout master or main
+git merge [tên nhánh]
+git push origin master
