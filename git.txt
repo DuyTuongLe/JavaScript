@@ -1,0 +1,28 @@
+Kiểm tra có bao nhiêu nhánh
+git branch
+
+Tạo nhánh
+git branch [tên nhánh]
+
+Chuyển nhánh
+git checkout [tên nhánh]
+
+Tạo và chuyển nhánh luôn
+git checkout -b [tên nhánh]
+
+Push nhánh mới lên github
+git push -u origin [tên nhánh]
+
+Đẩy code lên lần đầu
+cd /du-an/hinh-chu-nhat
+git init
+git add .
+git commit -m "Tạo file tính HCN"
+git remote add origin https://github.com/tuongduy/hinh-chu-nhat.git
+git push -u origin main
+
+Đẩy code lên github đã đẩy r
+git add .
+git commit -m "comment"
+git push -u origin [tên nhánh]
+
