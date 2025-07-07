@@ -71,7 +71,7 @@ let sln = (so1, so2) => {
         if(isNaN(so1) || isNaN(so2)) {
             reject("Giá trị không hợp lệ, vui lòng nhập số 1.");
         } else {
-            let result = (so1 > so2) ? so1 : so2;
+            let result = so1 > so2 ? so1 : so2;
             resolve(result);
         }
     })
@@ -88,3 +88,4 @@ sln(16, 14).then((result) => {
     console.log("Kết thúc hàm tính số lớn nhất giữa a và b.");
 });
 
+console.log

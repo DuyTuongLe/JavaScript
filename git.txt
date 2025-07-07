@@ -4,6 +4,12 @@ git branch
 Tạo nhánh
 git branch [tên nhánh]
 
+Xóa nhánh
+git branch -d [ten-nhanh] (-d = delete (chỉ xóa nếu đã được merge vào nhánh khác))
+git branch -D dev1 (-D = force delete (cẩn thận, vì có thể mất code chưa merge!))
+
+git push origin --delete ten-nhanh
+
 Chuyển nhánh
 git checkout [tên nhánh]
 
@@ -31,3 +37,8 @@ Phải qua master trước
 git checkout master or main
 git merge [tên nhánh]
 git push origin master
+
+Kiểm tra tất cả nhánh đã checkout hay chưa checkout
+git branch -r
+
+
